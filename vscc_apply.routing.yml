@@ -1,0 +1,6 @@
+vscc_apply.application_form:
+  path: '/admissions/apply'
+  defaults:
+    _controller: '\Drupal\vscc_apply\Controller\ApplyController::application_form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,76 @@
+<p><a class="button" href="/catalog/admission-to-the-college">View Admission Requirements</a></p>
+
+<h2>Steps to Apply for Admission</h2>
+
+<ol>
+	<li>Create a Login ID, up to any nine alphanumeric characters<br />
+	(Please DO NOT use your Vol State Student ID Number or Social Security Number as your Login ID)</li>
+	<li>Choose a PIN, which can be any six digit number (no letters, just numbers)</li>
+	<li>Verify your PIN, by typing it in again</li>
+	<li>Once logged in, select the application that fits you best</li>
+</ol>
+
+<form accept-charset="UNKNOWN" action="https://sernpidal.volstate.edu/pls/PROD/bwskalog.P_ProcLoginNon" enctype="application/x-www-form-urlencoded" method="post" name="f1" onsubmit="return check()">
+<table border="0" cellpadding="3" cellspacing="2" summary="Map Legend">
+	<thead>
+		<tr>
+			<th colspan="2">
+			<h3>Getting Started<br />
+			(New &amp; Re-admitting Applicants)</h3>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="right" width="150"><label for="login_id0">Create a Login ID:</label></td>
+			<td><input class="formbox" id="login_id0" maxlength="9" name="newid" size="15" type="text" />
+			<div class="null4" data-mce-mark="1"><em>no more than 9 characters, not your social security number or student ID</em></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" width="150"><label for="pin_id0">Create a PIN:</label></td>
+			<td><input class="formbox" id="pin_id0" maxlength="15" name="newpin" size="15" type="password" />
+			<div class="null4" data-mce-mark="1"><em>PIN must be exactly 6 numeric characters</em></div>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" width="150"><label for="verify_pin_id0">Verify PIN:</label></td>
+			<td><input class="formbox" id="verify_pin_id0" maxlength="15" name="verifypin" size="15" type="password" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input name="submit_btn" type="submit" value="Login" /> <input name="in_id" type="hidden" /> <input name="pin" type="hidden" /></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+
+<form accept-charset="UNKNOWN" action="https://sernpidal.volstate.edu/pls/PROD/bwskalog.P_ProcLoginNon" enctype="application/x-www-form-urlencoded" method="post"><input name="newid" type="hidden" /> <input name="newpin" type="hidden" /> <input name="verifypin" type="hidden" />
+<table border="0" cellpadding="3" cellspacing="2" summary="Need to Finish an Application You Already Started">
+	<thead>
+		<tr>
+			<th colspan="2">
+			<h3>Need to Finish an Application You Already Started?</h3>
+
+			<p>If you do not remember your ID and PIN, you will need to start a new application.</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td align="right" width="150"><label for="login_id02">Login ID:</label></td>
+			<td><input class="formbox" id="login_id02" maxlength="9" name="in_id" size="10" type="text" /></td>
+		</tr>
+		<tr>
+			<td align="right" width="150"><label for="pin_id02">PIN:</label></td>
+			<td><input class="formbox" id="pin_id02" maxlength="6" name="pin" size="6" type="password" /></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input name="submit_btn" type="submit" value="Login" /> <input name="in_id" type="hidden" /> <input name="pin" type="hidden" /></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+
+{{ attach_library('vscc_apply/dpmsrv') }}

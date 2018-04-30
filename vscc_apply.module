@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function vscc_apply_theme ($existing, $type, $theme, $path) {
+  return [
+    'vscc_apply_form' =>
+    array(
+      'variables' => array(
+        'markup' => null
+        ), 
+        'template' => 'page--Application'
+      ),
+    'vscc_apply_form_down' =>
+    array(
+      'variables' => array(
+        'markup' => null
+        ), 
+        'template' => 'page--ApplicationDown'
+      )
+  
+  ];
+}

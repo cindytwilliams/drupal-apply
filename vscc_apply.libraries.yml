@@ -1,0 +1,5 @@
+dpmsrv:
+  js:
+    https://s.dpmsrv.com/dpm_29350804a152f35fbef4117a6a434deee760dee9.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery

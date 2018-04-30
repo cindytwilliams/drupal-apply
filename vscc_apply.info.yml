@@ -1,0 +1,6 @@
+name: VSCC Apply Module
+description: displays the admissions application if the system is available
+package: Custom
+
+type: module
+core: 8.x
